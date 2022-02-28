@@ -1,0 +1,35 @@
+<html>
+<title>Taxi Booking Form</title>
+<h2>Taxi Booking Form</h2>
+<form name="myform">
+Name<input type="text" name="customer_name" required><br><br>
+Phone<input type="tel" name="phone_no" required><br><br>
+Email<input type="email" name="email_id" required><br><br>
+Which Taxi do you require?<br><br>
+<input type="radio" name="taxi" required value="car">Car<br>
+<p><lable><input type="radio" name="taxi" required value="van">Van<br>
+<p><lable><input type="radio" name="taxi" required value="TukTuk">TukTuk<br><br>
+<p>Extras</p>
+<p><lable><input type="checkbox" name="extras" value="Baby seat">Baby seat<br>
+<p><lable><input type="checkbox" name="extras"  value="wheelchair">wheelchair access<br>
+<p><lable><input type="checkbox" name="extras"  value="stock tip">stock tip<br><br>
+Pick up Date and Time<input type="datetime-local" name="date" required><br><br>
+Pickup Place
+<select id="pickup_place" name="pickup_place>
+<option value="" selected="selected">Select one</option>
+<option value="Taxi Office">Taxi Office</option>
+<option value="Taxi Hall">Taxi Hall</option>
+<option value="We'll guess">We'll guess</option>
+</select><br><br>
+Drop off list
+<input type="text" name="dropof_list" required list="destinations">
+<datalist id="destinations">
+<option value="Airport">
+<option value="Beach">
+<option value="Mall">
+</datalist> <br><br>
+Special instructions
+<textarea name="comments" maxlength="500"></textarea><br><br>
+<p><button>Submit Booking</button></p>
+</form>
+</html>
